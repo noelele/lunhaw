@@ -1,0 +1,463 @@
+body a {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+html, body{
+    font-size: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+/*About Us banner*/
+.banner{
+    background: url(../images/banner.jpg) no-repeat 0px -66px;
+    background-size: cover;
+    padding: 0em 0 3em 0;
+}
+/*//About Us banner*/
+
+/*header navbar and logo*/
+.header {
+	position: relative;
+    padding: 2em 0;
+    background: #FFF;
+    box-shadow: 0 2px 3px #e4e4e4;
+}
+.logo {
+    position: absolute;
+    top: 3%;
+    z-index: 999;
+    left: 45.5%;
+}
+.header .logo img{
+  width: 19.2%;
+  height: 19.2%;
+}
+.top-nav {
+    text-align: center;
+    width: 100%;
+}
+.top-nav ul {
+	margin: 0;
+  padding: 0;
+}
+.top-nav ul li{
+  position: relative;
+  z-index:9999;
+	list-style-type:none;
+	display: inline-block;
+	margin: 0 8em ;
+}
+.top-nav ul li:nth-child(2) {
+    margin-right:4.5em;
+}
+.top-nav li a {
+    color: #333;
+    font-size: 1.4em;
+    padding: 0;
+    font-weight: 600;
+    text-decoration: none;
+}
+.top-nav li a:hover ,.top-nav li a.active{
+    color: #82b74b;
+}
+/*//header navbar and logo*/
+
+/*back to top*/
+.backtotopbutton
+{
+  float:right ;
+  margin: -16px 45px 22px 0px;
+  font-size:16px;
+}
+
+#top-menu li.active a {
+    color: #82b74b;
+}
+/* menu-nav */
+.spacer
+{
+    width: 100%;
+    height: 95px;
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+}
+.menu-nav {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    z-index: 1111;
+}
+.menu-nav ul {
+	   margin: 0;
+    padding: 0;
+    padding-top:12px;
+
+}
+.menu-nav ul li{
+	list-style-type:none;
+	display: inline-block;
+	margin: 0 2em;
+}
+
+.menu-nav li a {
+    color: #333;
+    font-size: 1em;
+    padding: 0;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu-nav li a:hover ,.menu-nav li a.active{
+    color: #82b74b;
+}
+/*-- menu --*/
+
+.menu h3{
+	font-size: 2em;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menuitem{
+    margin-left:34em;
+    width: 900px;
+    height: 350px;
+    padding: 50px;
+    border: 1px solid black;
+}
+/*-- menu --*/
+.menu{
+	padding:4em 0;
+  z-index:10000;
+}
+.menuimg {
+    padding: 0;
+    background: url(../images/sp1.jpg) no-repeat 0px 0px;
+    min-height: 280px;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    border: solid 1px #eaeaea;
+    height: 281px;
+
+}
+
+.menudesc{
+    text-align: center;
+    padding: 5.66em 2em;
+    background: #FFFFFF;
+    border: solid 1px #eaeaea;
+    height:281px;
+}
+.menudesc h4{
+    color: #000;
+    font-size: 2em;
+    margin: .3em 0 0 0;
+    position: relative;
+    text-align: left;
+}
+
+.menudesc p{
+    line-height: 1.5em;
+    margin: 1.5em 0 0 0;
+    color: #999999;
+    font-size: 16pt;
+    text-align:left;
+}
+/*IMAGAE SA MGA NAAS MENU*/
+/*SOUP IMAGES*/
+.soup2{
+    background: url(../images/sp2.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.soup3{
+    background: url(../images/sp3.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+/*APPETIZER IMAGES*/
+.appet1{
+    background: url(../images/sp4.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.appet2{
+    background: url(../images/sp5.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.appet3{
+    background: url(../images/sp6.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.appet4{
+    background: url(../images/sp7.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+/*SALAD IMAGES*/
+.salad1{
+    background: url(../images/sp8.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.salad2{
+    background: url(../images/sp9.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.salad3{
+    background: url(../images/sp10.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+
+/*PASTA IMAGE*/
+.pasta1{
+    background: url(../images/sp12.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.pasta2{
+    background: url(../images/sp17.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.pasta3{
+    background: url(../images/sp11.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+/* MAIN MEAL IMAGES*/
+.meal1{
+    background: url(../images/sp15.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.meal2{
+    background: url(../images/sp14.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.meal3{
+    background: url(../images/sp16.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+.meal5{
+    background: url(../images/sp13.jpg) no-repeat 0px 0px !important;
+    background-size: cover !important;
+}
+
+/*-- //menu --*/
+/*-- footer --*/
+.footer{
+	background:#191d20;
+	padding:4em 0;
+  bottom:0px;
+  box-shadow: 0px 500px 0px 500px #191d20;
+}
+.getintouch h5{
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 600;
+    margin:1em 0;
+}
+.fbicon ul {
+    padding: 0;
+    margin: 0;
+}
+.fbicon ul li {
+    display: inline-block;
+    margin: 0 .5em 0 0;
+}
+.fbicon ul li a {
+    color: #FFFFFF;
+    text-align: center;
+}
+.fbicon ul li a i.fa.fa-facebook{
+    height: 30px;
+    width: 30px;
+    border: solid 2px #191d20;
+    line-height: 29px;
+    background: none;
+    color: #bbbbbb;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.fbicon ul li a i.fa.fa-facebook:hover {
+	border: solid 2px #3b5998;
+    color: #3b5998;
+}
+/*-- //footer --*/
+
+/*-- about --*/
+.about-bg{
+    padding: 0em 0 3em 0 !important;
+}
+.banner-text {
+    text-align: center;
+}
+.banner-text h2{
+    font-size: 2em;
+    margin: 1.5em 0 0 0;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/*-- menu images--*/
+.menu{
+	padding:4em 0;
+}
+/*-- //menu --*/
+/*-- contact --*/
+.contact{
+	padding:4em 0;
+    background: #f9f9fb;
+}
+.contact h4 {
+    margin: 0 0 1em;
+    font-size: 1.5em;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.map iframe {
+	width: 100%;
+	height: 400px;
+    border: none;
+}
+.address {
+     margin: 6em 0 0;
+}
+.contact-details {
+	padding: 0;
+}
+.address h4 {
+  margin: 0 0 .5em;
+}
+.feedback {
+   margin: 4em 0;
+}
+.aboutus {
+   margin: 4em 4em;
+}
+.aboutus p {
+    margin: 0;
+    color: #999999;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.address p {
+    margin: 0 0 .3em 0;
+    color: #999999;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.address ul{
+	padding:0;
+	margin:0;
+}
+.address ul li{
+	display: inline-block;
+}
+.address a {
+    color: #353535;
+    font-size: .9em;
+    letter-spacing: 1px;
+}
+.feedback p {
+    margin: 0;
+    color: #999999;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.contact-form {
+    margin: 3em 0 0;
+}
+.contact-form input[type="text"] {
+  display: inline-block;
+  background: none;
+  border:solid 1px #999999;
+  width: 31.9%;
+  outline: none;
+  padding:.5em;
+  font-size: .9em;
+  color: #999999;
+  margin-bottom: 1.5em;
+}
+.contact-form input[type="email"] {
+  display: inline-block;
+  background: none;
+  border:solid 1px #999999;
+  width: 31.9%;
+  outline: none;
+  padding:.5em;
+  font-size: .9em;
+  color: #999999;
+  margin-bottom: 1.5em;
+  margin: 0 1.25em;
+}
+.contact-form textarea {
+  display: inline-block;
+  background: none;
+  border:solid 1px #999999;
+  width: 100%;
+  outline: none;
+  padding:.5em;
+  font-size: .9em;
+  color: #999999;
+  margin-bottom: 1.5em;
+  min-height:150px;
+}
+button.btn1{
+    color: #82b74b;
+    font-size: 1em;
+    padding: .5em 1em;
+    border: solid 2px #82b74b;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+button.btn1:hover {
+    background: #82b74b;
+    color: #FFFFFF;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+/*-- //contact --*/
+/*facebook icon on footer*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-facebook:before {
+  content: "\f09a";
+}
+/*//facebook icon on footer*/

@@ -1,0 +1,324 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<!--favicon links-->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<!--//favicon linnks-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/noel.css" type="text/css" media="all" />
+<!-- font -->
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/SmoothScroll.min.js"></script> <!--anchor link smoothscroll-->
+<script type="text/javascript">
+//CHANGE ACTIVE MENU ON PAGE SCROLL
+jQuery(document).ready(function(jQuery) {
+            var topMenu = jQuery("#top-menu"),
+                offset = 40,
+                topMenuHeight = topMenu.outerHeight()+offset,
+                // All list items
+                menuItems =  topMenu.find('a[href*="#"]'),
+                // Anchors corresponding to menu items
+                scrollItems = menuItems.map(function(){
+                  var href = jQuery(this).attr("href"),
+                  id = href.substring(href.indexOf('#')),
+                  item = jQuery(id);
+                  //console.log(item)
+                  if (item.length) { return item; }
+                });
+
+            // so we can get a fancy scroll animation
+            menuItems.click(function(e){
+              var href = jQuery(this).attr("href"),
+                id = href.substring(href.indexOf('#'));
+                  offsetTop = href === "#" ? 0 : jQuery(id).offset().top-topMenuHeight+1;
+              jQuery('html, body').stop().animate({
+                  scrollTop: offsetTop
+              }, 300);
+              e.preventDefault();
+            });
+
+            // Bind to scroll
+            jQuery(window).scroll(function(){
+               // Get container scroll position
+               var fromTop = jQuery(this).scrollTop()+topMenuHeight;
+
+               // Get id of current scroll item
+               var cur = scrollItems.map(function(){
+                 if (jQuery(this).offset().top < fromTop)
+                   return this;
+               });
+
+               // Get the id of the current element
+               cur = cur[cur.length-1];
+               var id = cur && cur.length ? cur[0].id : "";
+
+               menuItems.parent().removeClass("active");
+               if(id){
+                    menuItems.parent().end().filter("[href*='#"+id+"']").parent().addClass("active");
+               }
+						 })
+					 });
+
+
+</script>
+
+<!--script to collapse menu nav-->
+<script type="text/javascript">
+$(document).ready(function() {
+
+  $(window).scroll(function () {
+
+    console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > 101) {
+      $('#nav_bar').addClass('navbar-fixed-top');
+    }
+
+    if ($(window).scrollTop() <102) {
+      $('#nav_bar').removeClass('navbar-fixed-top');
+    }
+  });
+});
+</script>
+
+</head>
+<body>
+		<!--header-->
+		<div class="header">
+			<div class="top-nav">
+				<ul>
+					<li><a class="active" href="index.html">Menu</a></li>
+					<li><a href="contact.html">About us</a></li>
+				</ul>
+			</div>
+      <div class="logo">
+				<a href="index.html"><img id="backtotop" src="images/lunhawlogo.png" alt="Lunhaw Logo"></img></a>
+			</div>
+				<div class="clearfix"> </div>
+
+		</div>
+    <!-- COLLAPSABLE MENU BAR-->
+		<div class="menu-nav" id="nav_bar"><!--/*data-spy="affix" data-offset-top="700"*/-->
+			<ul id="top-menu">
+				<li><a href="#soup">Soups</a></li>
+				<li><a href="#salad">Salads</a></li>
+				<li><a href="#appetizer">Appetizers</a></li>
+				<li><a href="#pasta">Pasta</a></li>
+				<li><a href="#main">Main Meals</a></li>
+			</ul>
+
+		</div>
+		<div class="clearfix"> </div>
+
+
+	<!-- MENU -->
+	<!--Soups-->
+	<div class="menu">
+		<div class="container">
+				<div class="spacer" id="soup">
+						&nbsp;
+				</div>
+				<h3>Soups</h3>
+        <br>
+        <!-- GREEN SOUP-->
+			  <div class="col-md-4 menuimg">
+				</div>
+				<div class="col-md-8 menudesc">
+				      <h4>Green Soup &emsp;&emsp;&emsp; ₱85</h4>
+				      <p>Green pea-spinach in coconut milk</p>
+				</div>
+        <!-- YELLOW SOUP-->
+				<div class="col-md-4 menuimg soup2">
+				</div>
+				<div class="col-md-8 menudesc">
+						<h4>Yellow Soup &emsp;&emsp;&emsp; ₱85</h4>
+						<p>Ginger-squash in coconut milk</p>
+				</div>
+        <!--WHITE SOUP-->
+        <div class="col-md-4 menuimg soup3">
+        </div>
+				<div class="col-md-8 menudesc">
+						<h4>White Soup &emsp;&emsp;&emsp;&nbsp; ₱85</h4>
+						<p>Potato-corn in coconut milk</p>
+				</div>
+			</div>
+		</div>
+<!--Salads-->
+<div class="menu">
+	<div class="container">
+			<div class="spacer" id="salad">
+					&nbsp;
+			</div>
+			<h3>Salads</h3>
+      <br>
+      <!--MANGO POMELO-->
+			<div class="col-md-4 menuimg salad1">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Mango Pomelo &emsp;&emsp;&emsp; ₱90</h4>
+					<p>A mix of pomelo, green mangoes, green tomatoes, cucumber, red bell pepper, and onionn, topped with cashews and tofu croutons, and served with our house dressing</p>
+			</div>
+	    <!--LOCAL GRENS-->
+			<div class="col-md-4 menuimg salad2">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Local Greens &emsp;&emsp;&emsp;&ensp;&ensp; ₱90</h4>
+					<p>A mix of saluyot, spinach, kamote tops, red tomatoes, onion, topped with tofu croutons, and served with our house dressing</p>
+			</div>
+      <!--ITALIAN SALAD-->
+      <div class="col-md-4 menuimg salad3">
+      </div>
+			<div class="col-md-8 menudesc">
+					<h4>Italian Salad &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp; ₱90</h4>
+					<p>A mix of fusiilli pasta, carrots, grapes, green tomatoes, red bell pepper, topped with tofu croutons, and served with our house dressing</p>
+			</div>
+
+	</div>
+</div>
+<!--Appetizers-->
+<div class="menu">
+	<div class="container">
+			<div class="spacer" id="appetizer">
+					&nbsp;
+			</div>
+			<h3>Appetizers</h3>
+      <br>
+      <!--AIR FRIES-->
+			<div class="col-md-4 menuimg appet1">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Air Fries &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;₱130</h4>
+					<p>Air-fried potatoes topped with parsley, and served with garlicky "sour cream"</p>
+			</div>
+      <!--VEGAN BUERGER-->
+			<div class="col-md-4 menuimg appet2">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Vegan Burger &emsp;&emsp;&emsp;&ensp;₱220</h4>
+					<p>A monggo-potato burger patty in a vegan burger bun with tomato, onion, lettuce, and cucumber, served with air fries</p>
+			</div>
+        <!--Garden Pizza-->
+      <div class="col-md-4 menuimg appet3">
+  		</div>
+			<div class="col-md-8 menudesc">
+					<h4>Garden Pizza &emsp;&emsp;&emsp;&ensp;₱240</h4>
+					<p>Tomato-basil pizza sauce, red bell pepper, spinach, pineapple, caned mushrooms, red tomatoes, onion, black olives, and drizzled with cashew cheese</p>
+			</div>
+      <!-- VEGAN SANWICH-->
+      <div class="col-md-4 menuimg appet4">
+      </div>
+			<div class="col-md-8 menudesc">
+					<h4>Vegan Sandwich &emsp;&ensp;&ensp;₱120</h4>
+					<p>Sandwich na vegan</p>
+			</div>
+		</div>
+</div>
+<!--Pasta-->
+<div class="menu">
+	<div class="container">
+			<div class="spacer" id="pasta">
+					&nbsp;
+				</div>
+			<h3>Pasta</h3>
+      <br>
+      <!--BOLOGNENSE-->
+			<div class="col-md-4 menuimg pasta1">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Bolognese &emsp;&emsp;&emsp;&nbsp;₱150</h4>
+					<p>Fettuccine in a sweet and spicy tomato basil sauce, topped with veg-balls</p>
+			</div>
+      <!--Peso Pasta-->
+			<div class="col-md-4 menuimg pasta2">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Pesto &emsp;&emsp;&emsp;&ensp;&emsp;&ensp;&nbsp;₱150</h4>
+					<p>Pesto Pasta</p>
+			</div>
+      <!--PS LASAGNEA-->
+      <div class="col-md-4 menuimg pasta3">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>PS Lasagna &emsp;&emsp;&ensp;₱150</h4>
+					<p>Pumpkin-spinach lasagna filled with meat substitute and white coconut sauce, on a sweet annd spicy tomato and basil sauce</p>
+			</div>
+</div>
+
+<!--Main Meals-->
+<div class="menu">
+	<div class="container">
+			<div class="spacer" id="main">
+					&nbsp;
+			</div>
+			<h3>Main Meals</h3>
+      <br>
+      <!-- SWEET AND SOUR TOFISH-->
+			<div class="col-md-4 menuimg meal1">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Sweet and Sour Tofish &emsp;&emsp;&ensp;₱125</h4>
+					<p>Breaded nori-wrapped tofu served with sweet and sour sauce, turmeric brown rice and out house salad</p>
+			</div>
+      <!--Vivimbap-->
+			<div class="col-md-4 menuimg meal2">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Vibimbap &emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&ensp;₱125</h4>
+					<p>Turmeric brown rice bowl topped with tofu "egg", mixed vegetables, and spicy Korean sauce</p>
+			</div>
+      <!--Air Fried tofu-->
+      <div class="col-md-4 menuimg meal3">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Air Fried Tofu &emsp;&ensp;&ensp;&nbsp;&emsp;&ensp;₱125</h4>
+					<p>Air fried tofu, tomatoes, and kankong in a soy-ginnger sauce, served with turmeric brown rice and our house salad</p>
+			</div>
+      <!--Bufallo Broccoli-->
+      <div class="col-md-4 menuimg meal4">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Buffalo Broccoli &emsp;&emsp;&ensp;₱165</h4>
+					<p>Bufallo Cauliflower Brocollu</p>
+			</div>
+      <!--Vegan sisig-->
+			<div class="col-md-4 menuimg meal5">
+			</div>
+			<div class="col-md-8 menudesc">
+					<h4>Vegan Sisig &emsp;&emsp;&ensp;&emsp;&emsp;₱165</h4>
+					<p>Tofu-mushroom sisig in coconut "butter" sauce, topped with tofu and "egg", and served with turmeric brown rice and our house salad</p>
+			</div>
+		</div>
+</div>
+
+	<a href="#backtotop"><p class="backtotopbutton">Back to top<p></a>
+	<!-- //menu -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+				<div class="col-md-3 getintouch">
+					<h5>Get In Touch<h5>
+					<div class="fbicon">
+						<ul>
+							<li><a href="https://www.facebook.com/lunhawvegancafe/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
